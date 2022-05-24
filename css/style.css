@@ -1,0 +1,126 @@
+*{
+    font-size: 16px;
+}
+header{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bg-dark {
+    background-color: #343a4000!important;
+}
+.navbar-brand i{
+    color: green;
+}
+.navbar-brand span{
+    font-size: 2rem;
+}
+.menu li{
+    margin: 0 10px;
+}
+
+.navbar-dark .menu .nav-link:hover {
+    color: green;
+}
+.menu li::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: green;
+    display: block;
+    transition: all 0.5s;
+}
+.menu li:hover::after{
+    width: 100%;
+    color: green;
+}
+.menu li.active::after{
+    width: 100%;
+}
+
+/* Carousel */
+/* sử dụng height sẽ không reponsive được */
+.carousel-item{
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.carousel-item:nth-child(1){
+    background-image: url("./../img/finland.jpg");
+   
+}
+.carousel-item:nth-child(2){
+    background-image: url("./../img/mountains.jpg");
+    
+}
+.carousel-item:nth-child(3){
+    background-image: url("./../img/mountains-1.jpg");
+   
+}
+.carousel_thumb{
+    width: 150px;
+    margin: auto;
+}
+.carousel_thumb img{
+    border-radius: 50%;
+}
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Project */
+#project{
+    padding: 5rem 0;
+}
+.carousel-inner .carousel-item .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(39,43,54,.5);
+}
+
+ .nav-pills .nav-link.active,.nav-pills .show>.nav-link {
+    background-color: #35a22c;
+    color: #fff;
+    border-color: #35a22c;
+}
+/* .nav-pills .nav-link {
+    color: #1a1d2d;
+    border: 1px solid #1a1d2d;
+    margin: 0 5px;
+} */
+
+.tab-content .tab-pane .card{
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 0.4rem rgb(0 0 0 / 13%);
+}
+.tab-content .tab-pane .card:hover{
+    border: 1px solid green;
+}
+#service{
+    position: relative;
+    background-image: url('./../img/3.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 5rem 0;
+}
+#service .container{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#service .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7,10,12,.72);
+}
